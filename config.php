@@ -13,10 +13,10 @@ $base_dados = 'hospsysrelate';
 //Dados para a ligação com a base de dados hospedada
 
 /*
-$host = 'mysql873.umbler.com';
-$utilizadorbd = 'utilizadorhosp';
-$passbd = 'hosputilizador';
-$base_dados = 'hospsys';
+$host = 'ec2-54-75-231-215.eu-west-1.compute.amazonaws.com';
+$utilizadorbd = 'mfxezmymjrdfqh';
+$passbd = 'a44c72e6a6d53026816181ec0ff6ccd8b71342f10813f25240a80c74db1f3e52';
+$base_dados = 'd9c4ive377mmid';
 */
 
 
