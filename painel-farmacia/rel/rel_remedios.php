@@ -128,104 +128,17 @@ include('../../conexao.php');
 			<tr>
 				<td style="font-size:12px"> <?php echo $nome; ?> </td>
 				<td style="font-size:12px"> <?php echo $descricao; ?> </td>
-				<td style="font-size:12px"> R$ <?php echo $estoque; ?> </td>				
+				<td style="font-size:12px"> <?php echo $estoque; ?> </td>				
 			</tr>
 
 		<?php }  ?>
 	</table>
 
-
-
-<hr>
-
-
-<hr>
-
-<?php
-if($tipo == 'Todas'){
-
-	?>
-
-	<div class="row">
-		<div class="col-sm-12">	
-			<p style="font-size:12px">
-				<b>Quantidade de Entradas:</b>  <?php echo $quant_entradas; ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<b>Quantidade de Saídas:</b>  <?php echo $quant_saidas; ?> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-
-
-			</p>
-		</div>
-	</div>
-
-	<div class="row">
-
-		<div class="col-sm-7">	
-			<p style="font-size:12px">
-				<b>Valor das Entradas:</b> <font color="green"> R$ <?php echo $total_entradas; ?>,00 </font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-				<b>Valor das Saídas:</b><font color="red"> R$ <?php echo $total_saidas; ?>,00 </font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-
-
-			</p>
-		</div>
-		<div class="col-sm-3">	
-			<p style="font-size:12px" align="right">
-				<b>Saldo Total:</b>
-				<?php 
-				$saldo = $total_entradas - $total_saidas;
-				if($saldo >= 0){
-					?>
-					<font color="green">R$ <?php echo $saldo ?>,00 </font>
-					<?php 
-				}else{
-					?>
-					<font color="red">R$ <?php echo $saldo ?>,00 </font> 
-					<?php 
-				}
-
-				?>
-
-
-
-
-
-			</p>
-		</div>
-
-	</div>
-
-<?php }else{
-
-	?>
-
-	<div class="row">
-		<div class="col-sm-8">	
-			<small><b> Quantidade de Movimentações:</b> <?php echo $quant; ?> </small>
-		</div>
-		<div class="col-sm-4">	
-			<small><b> Valor Total:</b> R$<?php echo $total_mov; ?>,00 </small>
-		</div>
-
-	</div>
-
-	<?php
-}
-
-?>
-
-
-
-
-
-
 </div>
 
 
 <div class="footer">
-	<p style="font-size:12px" align="center">Desenvolvido por Hugo Vasconcelos - Q-Cursos Networks</p> 
+	<p style="font-size:12px" align="center">Desenvolvido por Filipe Bravo </p>
 </div>
 
 
